@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="App">
-      YOOOOO
+      This will be calculator!
     </div>
   );
 }
