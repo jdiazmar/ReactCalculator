@@ -1,0 +1,13 @@
+:root {
+    --primary: #f26430;
+    --secondary: #333140;
+    --dark: #131a26;
+    --light: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
