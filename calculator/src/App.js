@@ -3,8 +3,8 @@ import { useState } from "react";
 
 function App() {
 
-  const [calc, setCalc] = ("");
-  const [result, setResult] = ("");
+  const [calc, setCalc] = useState("");
+  const [result, setResult] = useState("");
 
   const ops = ['/', '*', '+', '-','.'];
 
@@ -17,7 +17,7 @@ function App() {
 
     for (let i = 1; i < 10; i++) {
       digits.push(
-        <button key={i}>{i}</button>
+        <button onClick={() => updateCalc(i.toString())} key={i}>{i}</button>
       )
     }
 
