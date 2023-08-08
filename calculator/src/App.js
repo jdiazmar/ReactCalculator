@@ -34,6 +34,14 @@ function App() {
 
     return digits;
   }
+
+  const calculate = () => {
+    setCalc(eval(calc).toString());
+  }
+
+
+
+
   return (
     <div className="App">
       <div className="calculator">
@@ -55,7 +63,7 @@ function App() {
           {createDigits()}
           <button onClick={() => updateCalc('0')}>0</button>
           <button onClick={() => updateCalc('.')}>.</button>
-          <button onClick={() => updateCalc('=')}>=</button>
+          <button onClick={calculate}>=</button>
         </div>
       </div>
     </div>
