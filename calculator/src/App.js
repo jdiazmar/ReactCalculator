@@ -39,6 +39,14 @@ function App() {
     setCalc(eval(calc).toString());
   }
 
+  const deleteLast = () => {
+    if (calc == '') {
+      return;
+    }
+
+    const value = calc.slice(0, -1);
+  }
+
 
 
 
